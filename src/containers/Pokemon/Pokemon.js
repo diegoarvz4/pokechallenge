@@ -31,17 +31,19 @@ export default class Pokemon extends React.Component{
 
   render(){
     return(
-      <div>
+      <div className="Pokemon">
         <h2>{this.state.name}</h2>
         <img alt={this.state.name} src={this.state.urlSprite}/>
-        <h3>Abilities</h3>
-        <ul>
-          {
-            this.state.abilities.map((ab,idx) => (
-              <span key={ab+idx}>{ab}</span>
-            ))
-          }
-        </ul>
+        <div className="Pokemon-properties">
+          <h4>Abilities</h4>
+          <ul>
+            {
+              this.state.abilities.map((ab,idx) => (
+                <li key={ab+idx}>{ab}</li>
+              ))
+            }
+          </ul>
+        </div>
       </div>
     )
   }

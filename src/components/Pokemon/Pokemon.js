@@ -12,8 +12,8 @@ export default ( { name, url, toPokemon }) => {
 
 
   return (
-  <div onClick={() => toPokemon(name)}>
+  <div className="Pokemons-pokemon" onClick={() => toPokemon(name)}>
     <img alt={name} src={imgUrl}/>
-    <span>{name} " " {url}</span>
+    <h3>{name}</h3>
   </div>
 )}

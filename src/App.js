@@ -31,6 +31,7 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <div className="App">
+          <h1>PokeAPI</h1>
           <Route 
             exact path={'/'} 
             render={(props) => <Pokemons {...props} pokemons={this.state.pokemons}/>}

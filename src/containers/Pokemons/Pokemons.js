@@ -11,7 +11,7 @@ export default class Pokemons extends React.Component {
     const { pokemons } = this.props;
     
     return(
-      <div className="PokemonsGrid">
+      <div className="Pokemons">
         {
           pokemons.map((pokemon, idx) => (
             <Pokemon 
@@ -19,7 +19,6 @@ export default class Pokemons extends React.Component {
               name={pokemon.name}
               url={pokemon.url}
               toPokemon={this.toPokemon}
-              
             />
           ))
         }
